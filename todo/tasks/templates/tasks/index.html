@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% load tasks_tags %}
+
+{% block content %}
+    <form method="post" action=".">
+        {{ form }}
+        <input type="submit" name="submit" />
+    </form>
+    {% show_current_tasks owner author %}
+{% endblock %}

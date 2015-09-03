@@ -1,0 +1,7 @@
+{% load tasks_tags %}
+
+<ul id="todo">
+    {% for task in tasks %}
+        <li>{% if task|is_visible_for:user %}{{ task.title }}{% else %}******{% endif %}</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,5 @@
+[run]
+branch=1
+plugins=django_coverage_plugin
+source=.
+omit=todo/wsgi.py,manage.py
